@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="style.css" rel="stylesheet">
+  <script src="main.js" charset="utf-8"></script>
+  <title>Document</title>
+</head>
+<body bgcolor="#f5f6fa">
+
+<section id="section1">
+  <div class="block_checkIn">
+    <div class="checkIn">
+      <div id="log_in" class="log_in mark" onclick="HideReg(this)">LOG IN</div>
+      <div id="registration" class="registration mark" onclick="HideLog(this)">REGISTRATION</div>
+    </div>
+  </div>
+
+  <div class="block_for_data">
+    <div class="content">
+      <div class="logo">
+        <img src="image\BOMBER.png" alt="">
+      </div>
+      <form id="login_page" class="login_page" action="index.html" method="post">
+        <div class="form font_mRegular">
+          <input required placeholder="Enter login" class="enter_login" maxlength="25" size="40" name="login">
+        </div>
+
+        <div class="form font_mRegular">
+          <input required type="password" placeholder="Enter password" class="enter_password" maxlength="25" size="40" name="password">
+        </div>
+
+        <div class="remember_me font_mRegular">
+          <p > <input type="checkbox" id="checkbox"> Remember me </p>
+        </div>
+
+        <div class="authorization font_mRegular">
+          <button type="button" name="button" class="button">LOG IN</button>
+        </div>
+
+        <div class="forgot_pass font_mRegular">
+          <p>Forgot your password? <a href="#">Recovery</a></p>
+        </div>
+      </form>
+
+      <form id="block_registration" class="block_registration align" action="index.html" method="post">
+        <div class="form font_mRegular">
+          <input required placeholder="Enter login" class="enter_login" maxlength="25" size="40" name="login">
+        </div>
+
+        <div class="form font_mRegular">
+          <input required type="password" placeholder="Enter password" class="enter_password" maxlength="25" size="40" name="password">
+        </div>
+
+        <div class="form font_mRegular">
+          <input required type="password" placeholder="Repeat password" class="enter_password" maxlength="25" size="40" name="password">
+        </div>
+
+        <div class="authorization font_mRegular">
+          <button type="button" name="button" class="button">CREATE</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
